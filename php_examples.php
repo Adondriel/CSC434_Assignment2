@@ -152,12 +152,13 @@
                         <h3 class="panel-title">Source Code for this page:</h3>
                     </div>
                     <div class="panel-body">
-                        <p>
-                            <div style="text-align:left;">
-                                <p>
-                                    <?php show_source('php_examples.php'); ?>
-                                </p>
-                            </div>
+                        <h1>Click this link to visit the Github Directory for this assignment:  https://github.com/Adondriel/CSC434_Assignment2</h1>
+                        <h3>or, just look at the below printout of the source.</h3>
+                        <div style="text-align:left;">
+                            <p>
+                                <?php show_source('php_examples.php'); ?>
+                            </p>
+                        </div>
                     </div>
                 </div>
 

@@ -1,31 +1,47 @@
-var app = angular.module( 'myApp', [] )
-.controller('myController', ['$scope', function($scope) {
-	$scope.projectList = {
-	"mainProject": 	{
-		"title":"Assignment 2",
-		"desc":"This Site, tasked with making a site that has a page with HTML tag examples, as well as a page with PHP examples (with source code)",
-		"img":"assets/images/HTML5_icon.png",
-		"url":"html_examples.html",
-		"urlWords":"HTML Examples",
-		"url2":"php_examples.php",
-		"urlWords2":"PHP Examples"
-	},
-	"projects": [
-    {
-		"title":"Assignment 1",
-		"summary":"Tasked with making a very simple HTTP Client and Server that worked with each other.",
-		"img":"",
-		"desc":"Tasked with making a very simple HTTP Client and Server that worked with each other.",
-	}
+//Only the mainProject supports the Summary tag.
+var app = angular.module('myApp', [])
+    .controller('myController', ['$scope', function ($scope) {
+        $scope.projectList = {
+            "mainProject": {
+                "title": "Assignment 2",
+                "desc": "This project required me to create a home page, that would index my further projects(this page), a page that contains examples of html, and a page that contains examples of different PHP code, with source code.",
+                "img": "assets/images/html5.jpg",
+                "links": [
+                    {
+                        "url": "html_examples.html",
+                        "urlWords": "HTML Examples"
+                    },
+                    {
+                        "url": "php_examples.php",
+                        "urlWords": "PHP Examples"
+                    },
+                    {
+                        "url": "https://github.com/Adondriel/CSC434_Assignment2",
+                        "urlWords": "Github Repository"
+                    }
+                ]
+            },
+            "projects": [
+                {
+                    "title": "Assignment 1",
+                    "img": "assets/images/webserver.png",
+                    "desc": "This project required me to create a very simple web server, that accepted requests from a client, and then responded with a result.",
+                    "links": [
+                        {
+                            "url": "https://github.com/Adondriel/CSC434_Assignment1",
+                            "urlWords": "Github Repository"
+                        }
+                    ]
+                }
 	]
-	}
+        }
 
 }])
-.config( [
+    .config([
     '$compileProvider',
-    function( $compileProvider )
-    {   
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|mumble):/);
-        // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
+    function ($compileProvider)
+        {
+            $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|mumble):/);
+            // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
     }
 ]);
