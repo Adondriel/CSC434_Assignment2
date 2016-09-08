@@ -156,6 +156,7 @@
                         <h3>or, just look at the below printout of the source.</h3>
                         <div style="text-align:left;">
                             <p>
+                                <!--Fun side note, for when you read this source later, I was attempting to include the source code by just using "include('php_examples.php'); and it caused an infinite loop of the webpage embeding itself into itself... and load was loading infinitely. -->
                                 <?php show_source('php_examples.php'); ?>
                             </p>
                         </div>
