@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
     <meta name="author" content="3rd Wave Media">
+
+    <meta name="modifier" content="Adam Pine">
+
     <link rel="shortcut icon" href="favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -44,9 +47,9 @@
                 <h1 class="name">Adam Pine</h1>
                 <h2 class="desc">Junior Developer</h2>
                 <ul class="social list-inline">
-                    <li><a href="https://twitter.com/Adondriel"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/u/0/112128782691491148212/about"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="http://www.linkedin.com/in/adampine95"><i class="fa fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://twitter.com/Adondriel"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://plus.google.com/u/0/112128782691491148212/about"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="http://www.linkedin.com/in/adampine95"><i class="fa fa-linkedin"></i></a></li>-->
                     <li><a href="https://github.com/Adondriel"><i class="fa fa-github-alt"></i></a></li>
                 </ul>
             </div>
@@ -78,9 +81,9 @@
                             <div class="item featured text-center">
                                 <h3 class="title"><a ng-href="{{projectList.mainProject.url}}" target="_blank">{{projectList.mainProject.title}}</a></h3>
                                 <p class="summary">{{projectList.mainProject.summary}}</p>
-                                <div class="featured-image">
+                                <div class="featured-image center">
                                     <a ng-href="{{projectList.mainProject.url}}" target="_blank">
-                                        <img class="img-responsive project-image" ng-src="{{projectList.mainProject.img}}" alt="{{projectList.mainProject.title}}" />
+                                        <img class="img-responsive project-image" syle="display: block;margin: auto;width: 40%;" ng-src="{{projectList.mainProject.img}}" alt="{{projectList.mainProject.title}}" />
                                     </a>
                                     <!--<div class="ribbon">
                                         <div class="text">New</div>
